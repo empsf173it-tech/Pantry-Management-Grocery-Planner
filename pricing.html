@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantryHub | Pricing & Restock Plans</title>
+    <meta name="description" content="Affordable plans for smart pantry tracking and unlimited free grocery restock deliveries.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link id="bs-style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                    <rect x="3" y="3" width="22" height="22" rx="4" stroke="var(--color-primary)" stroke-width="2.2"/>
+                    <line x1="3" y1="13" x2="25" y2="13" stroke="var(--color-primary)" stroke-width="2"/>
+                    <rect x="6.5" y="6" width="5" height="5" rx="1.5" fill="var(--color-secondary)"/>
+                    <rect x="13.5" y="6" width="8" height="5" rx="1.5" stroke="var(--color-secondary)" stroke-width="1.5"/>
+                    <circle cx="8" cy="18.5" r="3" fill="var(--color-primary)"/>
+                    <path d="M8 15.5C8 14 9.5 14 10 14.5" stroke="var(--color-secondary)" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M14.5 18.5L17 21L22 16" stroke="var(--color-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>PantryHub</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-controls d-flex align-items-center gap-2">
+                    <a href="cart.html" class="nav-icon-btn" aria-label="Cart">
+                        <i data-lucide="shopping-cart"></i>
+                        <span class="cart-badge" style="display: none;">0</span>
+                    </a>
+                    <a href="login.html" class="btn-primary-custom ms-2 px-3 py-1.5" aria-label="Login">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header justify-content-center gap-3">
+            <h5 class="offcanvas-title mb-0" id="mobileMenuLabel">Menu</h5>
+            <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column text-center">
+            <ul class="navbar-nav flex-column mb-4 align-items-center w-100">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-flex justify-content-center mb-4 w-100 px-3">
+                <a href="login.html" class="btn-primary-custom w-100 py-2">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="pt-5 mt-5">
+        <!-- SECTION 1: DELIVERY PLANS -->
+        <section class="section-padding overflow-hidden position-relative" style="background: url('https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=1600&q=85') center center / cover no-repeat; min-height: 50vh; display: flex; align-items: center;">
+            <!-- Overlay -->
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.65) 0%,rgba(10,0,5,0.5) 60%,rgba(225,29,72,0.2) 100%);z-index:0;"></div>
+            <div class="container text-center position-relative z-1">
+                <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-3" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.25);">
+                    <span class="small fw-semibold text-white">Transparent Kitchen Plans</span>
+                </div>
+                <h1 class="display-5 fw-bold mb-4 text-white">Pantry Management &amp; Restock Plans</h1>
+                <p class="lead text-white mb-5 mx-auto" style="max-width: 620px; opacity: 0.9;">Whether you order occasionally or want fully automated weekly kitchen replenishment, we have a plan for you.</p>
+            </div>
+        </section>
+        
+        <section class="section-padding pt-5">
+            <div class="container">
+                <div class="row g-4 justify-content-center max-w-lg mx-auto text-body">
+                    <!-- Plan 1 -->
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="card-premium h-100 text-start position-relative border rounded-4 shadow-sm p-4 d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Starter Pantry</h5>
+                            <p class="text-muted small border-bottom pb-3 mb-3">Best for occasional restockers.</p>
+                            <div class="mb-4">
+                                <span class="fs-1 fw-bold">$5.99</span>
+                                <span class="text-muted">/delivery</span>
+                            </div>
+                            <ul class="list-unstyled mb-4 small text-muted flex-grow-1">
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> Free Pantry Inventory Tracker</li>
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> Standard delivery slots</li>
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> Expiry notifications</li>
+                                <li class="mb-2 text-opacity-50 text-decoration-line-through"><i data-lucide="x" size="16" class="me-2"></i> Free same-day delivery</li>
+                            </ul>
+                            <a href="register.html" class="btn-outline-custom w-100 mt-auto">Sign Up Free</a>
+                        </div>
+                    </div>
+                    <!-- Plan 2 -->
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="card-premium h-100 text-start position-relative border-primary shadow-lg rounded-4 p-4 d-flex flex-column" style="transform: scale(1.03); z-index: 2;">
+                            <span class="badge bg-primary position-absolute top-0 start-50 translate-middle rounded-pill px-3 py-2">Most Popular</span>
+                            <h5 class="fw-bold mb-2 pt-2">Family Smart Pantry</h5>
+                            <p class="text-muted small border-bottom pb-3 mb-3">Best for weekly households.</p>
+                            <div class="mb-4">
+                                <span class="fs-1 fw-bold">$9.99</span>
+                                <span class="text-muted">/month</span>
+                            </div>
+                            <ul class="list-unstyled mb-4 small text-muted flex-grow-1">
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> Unlimited free restock deliveries</li>
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> Automated low-stock reordering</li>
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> Priority same-day delivery slots</li>
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> Multi-device pantry sync</li>
+                            </ul>
+                            <a href="register.html" class="btn-primary-custom w-100 mt-auto">Start 14-Day Free Trial</a>
+                        </div>
+                    </div>
+                    <!-- Plan 3 -->
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="card-premium h-100 text-start position-relative border rounded-4 shadow-sm p-4 d-flex flex-column">
+                            <h5 class="fw-bold mb-2">Master Pantry VIP</h5>
+                            <p class="text-muted small border-bottom pb-3 mb-3">Complete kitchen peace of mind.</p>
+                            <div class="mb-4">
+                                <span class="fs-1 fw-bold">$99.00</span>
+                                <span class="text-muted">/year</span>
+                            </div>
+                            <ul class="list-unstyled mb-4 small text-muted flex-grow-1">
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> Unlimited free deliveries</li>
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> 10% off bulk pantry staples</li>
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> VIP pantry analytics & waste tracker</li>
+                                <li class="mb-2"><i data-lucide="check" size="16" class="text-primary me-2"></i> Dedicated support manager</li>
+                            </ul>
+                            <a href="register.html" class="btn-outline-custom w-100 mt-auto">Go VIP Annual</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: MEMBERSHIP BENEFITS -->
+        <section class="section-padding bg-surface">
+            <div class="container">
+                <div class="text-center mb-5 mx-auto" style="max-width: 600px;">
+                    <h2 class="fw-bold">Pantry Member Perks</h2>
+                    <p class="text-muted">Unlock seamless groceries and maximize your food savings.</p>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="card-premium h-100 text-center p-4 rounded-4 border">
+                            <div class="bg-light rounded-circle p-3 d-inline-block mb-3">
+                                <i data-lucide="truck" size="32" class="text-primary"></i>
+                            </div>
+                            <h6 class="fw-bold">Free Deliveries</h6>
+                            <p class="small text-muted mb-0">No delivery fees on orders over $35.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="card-premium h-100 text-center p-4 rounded-4 border">
+                            <div class="bg-light rounded-circle p-3 d-inline-block mb-3">
+                                <i data-lucide="clock" size="32" class="text-primary"></i>
+                            </div>
+                            <h6 class="fw-bold">Priority Windows</h6>
+                            <p class="small text-muted mb-0">Reserve premium morning and evening delivery slots.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="card-premium h-100 text-center p-4 rounded-4 border">
+                            <div class="bg-light rounded-circle p-3 d-inline-block mb-3">
+                                <i data-lucide="percent" size="32" class="text-accent"></i>
+                            </div>
+                            <h6 class="fw-bold">Bulk Discounts</h6>
+                            <p class="small text-muted mb-0">Exclusive wholesale pricing on grains, oils, and spices.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="card-premium h-100 text-center p-4 rounded-4 border">
+                            <div class="bg-light rounded-circle p-3 d-inline-block mb-3">
+                                <i data-lucide="chef-hat" size="32" class="text-accent"></i>
+                            </div>
+                            <h6 class="fw-bold">Recipe Assistant</h6>
+                            <p class="small text-muted mb-0">Personalized weekly meal plans synced with your pantry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: COMPARE PLANS -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5">Compare Features</h2>
+                
+                <!-- Desktop Table View -->
+                <div class="d-none d-lg-block bg-transparent rounded-4 p-4 border border-opacity-10">
+                    <table class="table table-borderless text-center align-middle mb-0" style="--bs-table-bg: transparent; --bs-table-color: inherit; background-color: transparent;">
+                        <thead>
+                            <tr class="border-bottom">
+                                <th class="text-start py-3 w-25">Feature</th>
+                                <th class="py-3">Starter Pantry</th>
+                                <th class="py-3 text-primary fw-bold">Family Smart Pantry</th>
+                                <th class="py-3">Master Pantry VIP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-bottom">
+                                <td class="text-start py-3">Delivery Fee</td>
+                                <td class="py-3">$5.99 per order</td>
+                                <td class="py-3 fw-bold text-primary">Free ($0)</td>
+                                <td class="py-3 fw-bold text-primary">Free ($0)</td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="text-start py-3">Pantry Inventory Tracker</td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="text-start py-3">Expiry Date Reminders</td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="text-start py-3">Auto Low-Stock Reordering</td>
+                                <td class="py-3 text-muted"><i data-lucide="x" size="20"></i></td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="text-start py-3">Same-Day Delivery</td>
+                                <td class="py-3 text-muted"><i data-lucide="x" size="20"></i></td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="text-start py-3">Bulk Staple Discounts</td>
+                                <td class="py-3 text-muted"><i data-lucide="x" size="20"></i></td>
+                                <td class="py-3 text-muted"><i data-lucide="x" size="20"></i></td>
+                                <td class="py-3 text-primary"><i data-lucide="check" size="20"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mobile Stacked Cards View -->
+                <div class="d-lg-none row g-4">
+                    <div class="col-12">
+                        <div class="card-premium p-4 rounded-4 border">
+                            <h6 class="fw-bold mb-3 border-bottom pb-2">Starter Pantry</h6>
+                            <ul class="list-unstyled small mb-0">
+                                <li class="mb-2 d-flex justify-content-between"><span>Delivery Fee</span> <span>$5.99</span></li>
+                                <li class="mb-2 d-flex justify-content-between"><span>Inventory Tracker</span> <span>Yes</span></li>
+                                <li class="mb-2 d-flex justify-content-between text-muted"><span>Auto Reorder</span> <span>No</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card-premium border-primary p-4 rounded-4">
+                            <h6 class="fw-bold mb-3 border-bottom pb-2 text-primary">Family Smart Pantry</h6>
+                            <ul class="list-unstyled small mb-0">
+                                <li class="mb-2 d-flex justify-content-between"><span>Delivery Fee</span> <span class="fw-bold text-primary">Free</span></li>
+                                <li class="mb-2 d-flex justify-content-between"><span>Inventory Tracker</span> <span>Yes</span></li>
+                                <li class="mb-2 d-flex justify-content-between"><span>Auto Reorder</span> <span>Yes</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card-premium p-4 rounded-4 border">
+                            <h6 class="fw-bold mb-3 border-bottom pb-2">Master Pantry VIP</h6>
+                            <ul class="list-unstyled small mb-0">
+                                <li class="mb-2 d-flex justify-content-between"><span>Delivery Fee</span> <span class="fw-bold text-primary">Free</span></li>
+                                <li class="mb-2 d-flex justify-content-between"><span>Inventory Tracker</span> <span>Yes</span></li>
+                                <li class="mb-2 d-flex justify-content-between"><span>Bulk Discounts</span> <span>10% Off</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: PRICING CTA -->
+        <section class="section-padding text-center">
+            <div class="container">
+                <div class="card-premium p-5 mx-auto shadow-sm rounded-4 border" style="max-width: 700px;">
+                    <h2 class="mb-3 fw-bold">Simplify Your Kitchen Today</h2>
+                    <p class="text-muted mb-4">Start managing your pantry and save on groceries. Upgrade or cancel anytime.</p>
+                    <a href="register.html" class="btn-primary-custom btn-lg px-5 rounded-pill">Get Started Free</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-12 col-xl-4 pe-xl-5 mb-4 mb-xl-0 text-center text-xl-start">
+                    <a href="index.html" class="footer-logo">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                            <rect x="3" y="3" width="22" height="22" rx="4" stroke="var(--color-primary)" stroke-width="2.2"/>
+                            <line x1="3" y1="13" x2="25" y2="13" stroke="var(--color-primary)" stroke-width="2"/>
+                            <rect x="6.5" y="6" width="5" height="5" rx="1.5" fill="var(--color-secondary)"/>
+                            <rect x="13.5" y="6" width="8" height="5" rx="1.5" stroke="var(--color-secondary)" stroke-width="1.5"/>
+                            <circle cx="8" cy="18.5" r="3" fill="var(--color-primary)"/>
+                            <path d="M8 15.5C8 14 9.5 14 10 14.5" stroke="var(--color-secondary)" stroke-width="1.2" stroke-linecap="round"/>
+                            <path d="M14.5 18.5L17 21L22 16" stroke="var(--color-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> PantryHub
+                    </a>
+                    <p class="text-muted mb-4">Your intelligent pantry management and grocery replenishment platform. Track cupboard inventory, stop food waste, and enjoy farm-fresh doorstep deliveries.</p>
+                    <div class="social-icons justify-content-center justify-content-xl-start">
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="social-icon" aria-label="X"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-2 footer-col mb-4 mb-xl-0 text-center text-xl-start">
+                    <h5>Shop & Restock</h5>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">Pantry Staples</a></li>
+                        <li><a href="shop.html">Fresh Produce</a></li>
+                        <li><a href="shop.html">Dairy & Cold Storage</a></li>
+                        <li><a href="shop.html">Bakery & Grains</a></li>
+                        <li><a href="shop.html">Weekly Restock Deals</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-2 footer-col mb-4 mb-xl-0 text-center text-xl-start">
+                    <h5>Pantry Tools</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Inventory Tracker</a></li>
+                        <li><a href="services.html">Expiry Date Alerts</a></li>
+                        <li><a href="services.html">Auto-Restock Lists</a></li>
+                        <li><a href="pricing.html">Pantry Plans</a></li>
+                        <li><a href="services.html">Pantry-To-Plate Recipes</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-2 footer-col mb-4 mb-xl-0 text-center text-xl-start">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">Zero Waste Mission</a></li>
+                        <li><a href="contact.html">Store & Hub Locations</a></li>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-2 footer-col mb-4 mb-xl-0 text-center text-xl-start">
+                    <h5>Contact Us</h5>
+                    <ul class="footer-links">
+                        <li class="d-flex align-items-center justify-content-center justify-content-xl-start gap-2"><i class="bi bi-geo-alt fs-5"></i> 123 Pantry Way, NY</li>
+                        <li class="d-flex align-items-center justify-content-center justify-content-xl-start gap-2"><i class="bi bi-telephone fs-5"></i> +1 234 567 8900</li>
+                        <li class="d-flex align-items-center justify-content-center justify-content-xl-start gap-2"><i class="bi bi-envelope fs-5"></i> hello@pantryhub.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-opacity-10 pt-4 text-center text-muted small">
+                <p>&copy; 2026 PantryHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

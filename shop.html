@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantryHub | Shop & Pantry Restock</title>
+    <meta name="description" content="Shop fresh groceries, pantry staples, and daily kitchen essentials on PantryHub.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link id="bs-style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                    <rect x="3" y="3" width="22" height="22" rx="4" stroke="var(--color-primary)" stroke-width="2.2"/>
+                    <line x1="3" y1="13" x2="25" y2="13" stroke="var(--color-primary)" stroke-width="2"/>
+                    <rect x="6.5" y="6" width="5" height="5" rx="1.5" fill="var(--color-secondary)"/>
+                    <rect x="13.5" y="6" width="8" height="5" rx="1.5" stroke="var(--color-secondary)" stroke-width="1.5"/>
+                    <circle cx="8" cy="18.5" r="3" fill="var(--color-primary)"/>
+                    <path d="M8 15.5C8 14 9.5 14 10 14.5" stroke="var(--color-secondary)" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M14.5 18.5L17 21L22 16" stroke="var(--color-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>PantryHub</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-controls d-flex align-items-center gap-2">
+                    <a href="cart.html" class="nav-icon-btn" aria-label="Cart">
+                        <i data-lucide="shopping-cart"></i>
+                        <span class="cart-badge" style="display: none;">0</span>
+                    </a>
+                    <a href="login.html" class="btn-primary-custom ms-2 px-3 py-1.5" aria-label="Login">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header justify-content-center gap-3">
+            <h5 class="offcanvas-title mb-0" id="mobileMenuLabel">Menu</h5>
+            <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column text-center">
+            <ul class="navbar-nav flex-column mb-4 align-items-center w-100">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-flex justify-content-center mb-4 w-100 px-3">
+                <a href="login.html" class="btn-primary-custom w-100 py-2">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="pt-5 mt-5">
+        <!-- SECTION 1: SHOP HERO -->
+        <section class="section-padding overflow-hidden position-relative" style="background: url('https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1600&q=85') center center / cover no-repeat; min-height: 48vh; display: flex; align-items: center;">
+            <!-- Overlay -->
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.65) 0%,rgba(10,0,5,0.5) 60%,rgba(225,29,72,0.2) 100%);z-index:0;"></div>
+            <div class="container position-relative z-1 text-center">
+                <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-3" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.25);">
+                    <span class="small fw-semibold text-white">Farm-Fresh &amp; Non-Perishable Staples</span>
+                </div>
+                <h1 class="display-4 fw-bold mb-3 text-white">Pantry Restock &amp; Groceries</h1>
+                <p class="lead text-white mb-4 mx-auto" style="max-width: 550px; opacity: 0.9;">Stock your dry cupboards, spice shelves, and refrigerator with premium organic produce, dairy, bakery, meats, and long-lasting grains.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 2: CATEGORY FILTERS -->
+        <section class="py-4 border-bottom border-opacity-10">
+            <div class="container">
+                <div class="d-flex overflow-auto justify-content-lg-center gap-3 pb-2 custom-scrollbar align-items-center">
+                    <button class="btn btn-primary rounded-pill px-4 flex-shrink-0">All Products</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="package" size="16"></i> Pantry Staples</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="apple" size="16"></i> Fruits</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="carrot" size="16"></i> Vegetables</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="milk" size="16"></i> Dairy</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="croissant" size="16"></i> Bakery</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="beef" size="16"></i> Meat</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PRODUCT GRID -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4">
+                    <p class="mb-0 text-muted">Showing <span class="fw-bold text-dark">12</span> of 45 pantry essentials</p>
+                    <select class="form-select w-100 w-md-auto bg-light border-0">
+                        <option>Sort by: Recommended</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest Arrivals</option>
+                    </select>
+                </div>
+                
+                <div class="row g-4" id="shop-product-grid">
+                    <!-- Products will be dynamically populated by main.js from window.groceryProducts -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-12 col-xl-4 pe-xl-5 mb-4 mb-xl-0 text-center text-xl-start">
+                    <a href="index.html" class="footer-logo">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2">
+                            <rect x="3" y="3" width="22" height="22" rx="4" stroke="var(--color-primary)" stroke-width="2.2"/>
+                            <line x1="3" y1="13" x2="25" y2="13" stroke="var(--color-primary)" stroke-width="2"/>
+                            <rect x="6.5" y="6" width="5" height="5" rx="1.5" fill="var(--color-secondary)"/>
+                            <rect x="13.5" y="6" width="8" height="5" rx="1.5" stroke="var(--color-secondary)" stroke-width="1.5"/>
+                            <circle cx="8" cy="18.5" r="3" fill="var(--color-primary)"/>
+                            <path d="M8 15.5C8 14 9.5 14 10 14.5" stroke="var(--color-secondary)" stroke-width="1.2" stroke-linecap="round"/>
+                            <path d="M14.5 18.5L17 21L22 16" stroke="var(--color-secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> PantryHub
+                    </a>
+                    <p class="text-muted mb-4">Your intelligent pantry management and grocery replenishment platform. Track cupboard inventory, stop food waste, and enjoy farm-fresh doorstep deliveries.</p>
+                    <div class="social-icons justify-content-center justify-content-xl-start">
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="social-icon" aria-label="X"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-2 footer-col mb-4 mb-xl-0 text-center text-xl-start">
+                    <h5>Shop & Restock</h5>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">Pantry Staples</a></li>
+                        <li><a href="shop.html">Fresh Produce</a></li>
+                        <li><a href="shop.html">Dairy & Cold Storage</a></li>
+                        <li><a href="shop.html">Bakery & Grains</a></li>
+                        <li><a href="shop.html">Weekly Restock Deals</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-2 footer-col mb-4 mb-xl-0 text-center text-xl-start">
+                    <h5>Pantry Tools</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Inventory Tracker</a></li>
+                        <li><a href="services.html">Expiry Date Alerts</a></li>
+                        <li><a href="services.html">Auto-Restock Lists</a></li>
+                        <li><a href="pricing.html">Pantry Plans</a></li>
+                        <li><a href="services.html">Pantry-To-Plate Recipes</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-2 footer-col mb-4 mb-xl-0 text-center text-xl-start">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">Zero Waste Mission</a></li>
+                        <li><a href="contact.html">Store & Hub Locations</a></li>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-xl-2 footer-col mb-4 mb-xl-0 text-center text-xl-start">
+                    <h5>Contact Us</h5>
+                    <ul class="footer-links">
+                        <li class="d-flex align-items-center justify-content-center justify-content-xl-start gap-2"><i class="bi bi-geo-alt fs-5"></i> 123 Pantry Way, NY</li>
+                        <li class="d-flex align-items-center justify-content-center justify-content-xl-start gap-2"><i class="bi bi-telephone fs-5"></i> +1 234 567 8900</li>
+                        <li class="d-flex align-items-center justify-content-center justify-content-xl-start gap-2"><i class="bi bi-envelope fs-5"></i> hello@pantryhub.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-opacity-10 pt-4 text-center text-muted small">
+                <p>&copy; 2026 PantryHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
