@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 8. Shop Product Grid Rendering
     const shopGrid = document.getElementById('shop-product-grid');
     if (shopGrid && window.groceryProducts) {
-        const categoryButtons = document.querySelectorAll('.custom-scrollbar button');
+        const categoryButtons = document.querySelectorAll('.shop-filter-btn');
         const countSpan = document.querySelector('.text-muted span.fw-bold.text-dark');
         
         function renderProducts(category) {
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.classList.remove('btn-outline-secondary');
                     btn.classList.add('btn-primary');
                     
-                    const categoryText = btn.textContent.trim();
+                    const categoryText = btn.getAttribute('data-category') || btn.textContent.trim();
                     renderProducts(categoryText);
                 });
             });

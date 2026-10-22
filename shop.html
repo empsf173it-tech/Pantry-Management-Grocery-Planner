@@ -60,11 +60,17 @@
 
     <!-- Offcanvas Mobile Menu -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-        <div class="offcanvas-header justify-content-center gap-3">
-            <h5 class="offcanvas-title mb-0" id="mobileMenuLabel">Menu</h5>
-            <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
-                <i data-lucide="x"></i>
-            </button>
+        <div class="offcanvas-header justify-content-between align-items-center px-4 pt-3 pb-2 border-bottom border-opacity-10">
+            <h5 class="offcanvas-title mb-0 fw-bold" id="mobileMenuLabel">Menu</h5>
+            <div class="d-flex align-items-center gap-2">
+                <a href="cart.html" class="nav-icon-btn position-relative" aria-label="Cart">
+                    <i data-lucide="shopping-cart"></i>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </a>
+                <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
         </div>
         <div class="offcanvas-body d-flex flex-column text-center">
             <ul class="navbar-nav flex-column mb-4 align-items-center w-100">
@@ -74,6 +80,7 @@
                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center justify-content-center gap-2" href="cart.html"><i data-lucide="shopping-cart" size="18"></i> Cart</a></li>
             </ul>
             <div class="d-flex justify-content-center mb-4 w-100 px-3">
                 <a href="login.html" class="btn-primary-custom w-100 py-2">Login</a>
@@ -96,16 +103,16 @@
         </section>
 
         <!-- SECTION 2: CATEGORY FILTERS -->
-        <section class="py-4 border-bottom border-opacity-10">
+        <section class="py-4 border-bottom border-opacity-10 bg-white">
             <div class="container">
-                <div class="d-flex overflow-auto justify-content-lg-center gap-3 pb-2 custom-scrollbar align-items-center">
-                    <button class="btn btn-primary rounded-pill px-4 flex-shrink-0">All Products</button>
-                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="package" size="16"></i> Pantry Staples</button>
-                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="apple" size="16"></i> Fruits</button>
-                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="carrot" size="16"></i> Vegetables</button>
-                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="milk" size="16"></i> Dairy</button>
-                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="croissant" size="16"></i> Bakery</button>
-                    <button class="btn btn-outline-secondary rounded-pill px-4 flex-shrink-0 d-flex align-items-center gap-2"><i data-lucide="beef" size="16"></i> Meat</button>
+                <div class="shop-category-filters d-flex flex-wrap justify-content-center align-items-center gap-2 pb-1">
+                    <button class="btn btn-primary rounded-pill shop-filter-btn" data-category="All Products">All Products</button>
+                    <button class="btn btn-outline-secondary rounded-pill d-inline-flex align-items-center gap-2 shop-filter-btn" data-category="Pantry Staples"><i data-lucide="package" size="15"></i> Pantry Staples</button>
+                    <button class="btn btn-outline-secondary rounded-pill d-inline-flex align-items-center gap-2 shop-filter-btn" data-category="Fruits"><i data-lucide="apple" size="15"></i> Fruits</button>
+                    <button class="btn btn-outline-secondary rounded-pill d-inline-flex align-items-center gap-2 shop-filter-btn" data-category="Vegetables"><i data-lucide="carrot" size="15"></i> Vegetables</button>
+                    <button class="btn btn-outline-secondary rounded-pill d-inline-flex align-items-center gap-2 shop-filter-btn" data-category="Dairy"><i data-lucide="milk" size="15"></i> Dairy</button>
+                    <button class="btn btn-outline-secondary rounded-pill d-inline-flex align-items-center gap-2 shop-filter-btn" data-category="Bakery"><i data-lucide="croissant" size="15"></i> Bakery</button>
+                    <button class="btn btn-outline-secondary rounded-pill d-inline-flex align-items-center gap-2 shop-filter-btn" data-category="Meat"><i data-lucide="beef" size="15"></i> Meat</button>
                 </div>
             </div>
         </section>
@@ -115,7 +122,7 @@
             <div class="container">
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4">
                     <p class="mb-0 text-muted">Showing <span class="fw-bold text-dark">12</span> of 45 pantry essentials</p>
-                    <select class="form-select w-100 w-md-auto bg-light border-0">
+                    <select class="form-select w-100 w-md-auto bg-white shadow-sm" style="border: 1.5px solid #cbd5e1 !important; border-radius: 0.5rem; padding: 0.55rem 2.25rem 0.55rem 1rem; font-weight: 500; color: #1e293b; max-width: 260px;">
                         <option>Sort by: Recommended</option>
                         <option>Price: Low to High</option>
                         <option>Price: High to Low</option>

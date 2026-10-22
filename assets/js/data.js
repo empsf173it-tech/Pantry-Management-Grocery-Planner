@@ -56,7 +56,7 @@ const products = [
     // Pantry Staples
     { id: 41, name: "Extra Virgin Olive Oil (1L)", category: "Pantry Staples", price: 13.49, oldPrice: 15.99, discount: 15, image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=80", rating: 4.9 },
     { id: 42, name: "Organic Jasmine Rice (5kg)", category: "Pantry Staples", price: 11.99, image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&q=80", rating: 4.8 },
-    { id: 43, name: "Italian Penne Rigate (500g)", category: "Pantry Staples", price: 2.29, image: "https://images.unsplash.com/photo-1621996346565-e3d5d6281781?w=500&q=80", rating: 4.7 },
+    { id: 43, name: "Italian Penne Rigate (500g)", category: "Pantry Staples", price: 2.29, image: "https://images.unsplash.com/photo-1551462147-ff29053bfc14?w=500&q=80", rating: 4.7 },
     { id: 44, name: "Whole Rolled Oats (1kg)", category: "Pantry Staples", price: 3.99, image: "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=500&q=80", rating: 4.8 },
     { id: 45, name: "Organic Crushed Tomatoes", category: "Pantry Staples", price: 1.89, image: "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500&q=80", rating: 4.6 }
 ];
