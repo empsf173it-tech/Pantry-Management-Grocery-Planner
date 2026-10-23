@@ -680,6 +680,48 @@ img {
     margin-inline: auto !important;
   }
 
+  .hero-badges-col {
+    width: 100% !important;
+    z-index: 2;
+  }
+}
+
+/* 768px tablet layout for hero badges */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .hero-badges-col {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+  .hero-badges-col .floating-element {
+    width: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .hero-badges-col .floating-element > div {
+    width: 290px !important;
+  }
+}
+
+/* Mobile layout for hero badges */
+@media (max-width: 575.98px) {
+  .hero-badges-col {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+  .hero-badges-col .floating-element {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .hero-badges-col .floating-element > div {
+    width: 100% !important;
+    max-width: 320px !important;
+  }
+}
+
   /* Keep footer section in center alignment */
   .footer-custom, footer {
     text-align: center !important;
